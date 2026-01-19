@@ -14,7 +14,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173","https://sparkling-stroopwafel-e3c1aa.netlify.app/"],
     credentials: true,
   })
 );
