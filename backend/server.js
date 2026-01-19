@@ -14,11 +14,14 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:5173","https://sparkling-stroopwafel-e3c1aa.netlify.app/"],
+    origin: [
+      "http://localhost:5173", // local dev (Vite)
+      "https://sparkling-stroopwafel-e3c14a.netlify.app" // 🔴 YOUR NETLIFY URL
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
 );
-
 app.use(express.json());
 
 
