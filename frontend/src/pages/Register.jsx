@@ -110,7 +110,7 @@ function Register() {
       setIsError(false);
 
       const res = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://login-signup-1hpi.onrender.com/api/auth/register",
         { name, email, password }
       );
 

@@ -107,7 +107,7 @@ function Login() {
       setIsError(false);
 
       const res = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://login-signup-1hpi.onrender.com/api/auth/login",
         { email, password }
       );
 
