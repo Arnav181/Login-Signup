@@ -180,7 +180,7 @@ function Register() {
 
         <div style={styles.footerText}>
           Already have an account?{" "}
-          <Link to="/login" style={styles.link}>
+          <Link to="/" style={styles.link}>
             Login
           </Link>
         </div>

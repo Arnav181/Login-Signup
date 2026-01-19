@@ -33,7 +33,7 @@ function Profile() {
           }}
           onClick={() => {
             localStorage.removeItem("token");
-            window.location.href = "/login";
+            window.location.href = "/";
           }}
         >
           Logout
