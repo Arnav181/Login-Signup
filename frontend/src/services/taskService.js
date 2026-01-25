@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/tasks";
+const API_URL = "https://login-signup-1hpi.onrender.com/api/tasks";
 
 const getAuthHeaders = () => {
   const token = localStorage.getItem("token");
