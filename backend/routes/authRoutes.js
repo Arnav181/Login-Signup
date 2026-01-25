@@ -1,5 +1,5 @@
 import express from 'express';
-import User from '../models/user.js';
+import User from '../models/User.js';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import authMiddleware from '../middleware/authMiddleware.js';
@@ -55,7 +55,7 @@ router.post("/login",async(req,res)=>{
             {expiresIn: "1h"}
         )
 
-        return res.status(200).json({message:"Login successful",userId:user._id,jwtoken});
+        return res.status(200).json({message:"Login successful",userId:user._id,token:jwtoken});
     }catch(error){
         return res.status(500).json({message:"Server error"});
     }
