@@ -181,7 +181,7 @@ export default function BlogDetails() {
   const [blog, setBlog] = useState(null);
 
   useEffect(() => {
-    fetch(`http://login-signup-1hpi.onrender.com/api/blogs/${id}`)
+    fetch(`https://login-signup-1hpi.onrender.com/api/blogs/${id}`)
       .then((res) => res.json())
       .then(setBlog);
   }, [id]);
